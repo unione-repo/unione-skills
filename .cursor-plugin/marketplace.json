@@ -1,0 +1,12 @@
+{
+  "name": "unione-skills",
+  "owner": {
+    "name": "UniOne"
+  },
+  "plugins": [
+    {
+      "name": "unione",
+      "source": "./"
+    }
+  ]
+}

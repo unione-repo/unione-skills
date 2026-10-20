@@ -1,0 +1,21 @@
+{
+  "name": "unione",
+  "displayName": "UniOne",
+  "description": "Send email with UniOne: the Web API and SDKs, templates, webhooks, deliverability best practices and migration from other providers",
+  "version": "1.0.0",
+  "author": {
+    "name": "UniOne",
+    "url": "https://unione.io"
+  },
+  "homepage": "https://unione.io",
+  "repository": "https://github.com/unione-repo/unione-skills",
+  "license": "MIT",
+  "keywords": [
+    "email",
+    "unione",
+    "transactional-email",
+    "smtp",
+    "deliverability",
+    "webhooks"
+  ]
+}

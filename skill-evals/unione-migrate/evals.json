@@ -1,0 +1,26 @@
+{
+  "skill_name": "unione-migrate",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Replace SendGrid with UniOne in this project.",
+      "expected_output": "Maps sgMail.send to email/send, personalizations to recipients, categories to tags, events to statuses.",
+      "files": [],
+      "expectations": [
+        "Maps fields from the sendgrid reference",
+        "Converts webhook events",
+        "Imports suppressions"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "We use Resend batch sends; move them to UniOne.",
+      "expected_output": "No batch endpoint: one call per different message or recipients[] for the same message; idempotence window is one minute.",
+      "files": [],
+      "expectations": [
+        "Does not invent a batch method",
+        "Mentions the one-minute idempotence window"
+      ]
+    }
+  ]
+}

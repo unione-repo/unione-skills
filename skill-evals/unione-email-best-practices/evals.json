@@ -1,0 +1,27 @@
+{
+  "skill_name": "unione-email-best-practices",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Our emails go to spam.",
+      "expected_output": "Checks SPF/DKIM/DMARC first, then complaints and bounces, then content.",
+      "files": [],
+      "expectations": [
+        "Mentions include:spf.unione.io",
+        "Mentions DMARC",
+        "Checks bounces and complaints"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "Add a newsletter signup.",
+      "expected_output": "Double opt-in, stored consent, unsubscribe, the laws of the market.",
+      "files": [],
+      "expectations": [
+        "Double opt-in",
+        "Stores consent",
+        "Mentions the relevant law"
+      ]
+    }
+  ]
+}

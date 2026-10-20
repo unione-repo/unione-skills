@@ -1,0 +1,27 @@
+{
+  "skill_name": "unione-email-templates",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Make a password reset email template with a button and store it.",
+      "expected_output": "Table-based HTML with inline CSS and plaintext, template/set, link to the visual editor.",
+      "files": [],
+      "expectations": [
+        "Uses tables and inline styles",
+        "Adds a plaintext part",
+        "Calls template/set",
+        "Gives the editor link with the template id"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "Our order email lists items in a loop; which syntax?",
+      "expected_output": "liquid (or velocity) with template_engine set, not the default simple.",
+      "files": [],
+      "expectations": [
+        "Sets template_engine to liquid or velocity",
+        "Uses a for loop syntax of that engine"
+      ]
+    }
+  ]
+}

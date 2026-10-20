@@ -1,0 +1,26 @@
+{
+  "name": "unione-skills",
+  "metadata": {
+    "description": "UniOne skills"
+  },
+  "owner": {
+    "name": "UniOne"
+  },
+  "plugins": [
+    {
+      "name": "unione",
+      "description": "Send email with UniOne: the Web API and SDKs, templates, webhooks, deliverability best practices and migration from other providers",
+      "source": "./",
+      "category": "developer-tools",
+      "homepage": "https://unione.io",
+      "tags": [
+        "email",
+        "unione",
+        "transactional-email",
+        "smtp",
+        "deliverability",
+        "webhooks"
+      ]
+    }
+  ]
+}

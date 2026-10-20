@@ -1,0 +1,49 @@
+{
+  "skill_name": "unione",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Send an order confirmation with UniOne from our Node.js backend to the customer.",
+      "expected_output": "Uses the Node.js SDK or email/send with the key from the environment, sets idempotence_key, reads failed_emails.",
+      "files": [],
+      "expectations": [
+        "Reads the key from an environment variable",
+        "Sets message.idempotence_key",
+        "Checks failed_emails of the response",
+        "Does not call the API from the browser"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "We send the same newsletter text to 300 users with UniOne; make it fast.",
+      "expected_output": "One email/send with up to 500 recipients and per-recipient substitutions, not 300 calls.",
+      "files": [],
+      "expectations": [
+        "Uses recipients[] with substitutions",
+        "Does not invent a batch endpoint"
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "Add a webhook endpoint that marks UniOne bounces in our database (Python).",
+      "expected_output": "webhook/set, checks the MD5 auth over the raw body, answers 200 fast, handles hard_bounced.",
+      "files": [],
+      "expectations": [
+        "Verifies auth before parsing",
+        "Answers 200 within 3 seconds / queues work",
+        "Handles hard_bounced and spam"
+      ]
+    },
+    {
+      "id": 4,
+      "prompt": "I have no domain yet — how do I try UniOne?",
+      "expected_output": "The sandbox flow: get-sandbox-domain, confirmed-email/create, send to the confirmed address.",
+      "files": [],
+      "expectations": [
+        "Mentions confirmed emails and the 48-hour link",
+        "Does not suggest fake test addresses",
+        "Uses an account key"
+      ]
+    }
+  ]
+}
